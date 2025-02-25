@@ -3,7 +3,7 @@ import { Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 
-export const geistMono = Geist_Mono({
+const geistMono = Geist_Mono({
   weight: ["400", "400"],
   subsets: ["latin"],
   variable: "--font-geist_mono",
