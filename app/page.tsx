@@ -6,7 +6,6 @@ import me from "../public/playing.jpg";
 import spectro from "../public/spectro.png";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
-import cnn from "../public/cnn.png";
 import { MdEmail } from "react-icons/md";
 
 export default function Home() {
