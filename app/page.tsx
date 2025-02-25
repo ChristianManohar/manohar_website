@@ -192,6 +192,11 @@ export default function Home() {
             </li>
           </ul>
         </section>
+        <div>
+          <p className="text-slate-300 text-right px-2">
+            Made by Christian Manohar
+          </p>
+        </div>
       </main>
     </div>
   );
