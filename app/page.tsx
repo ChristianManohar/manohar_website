@@ -3,7 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { GiSaxophone } from "react-icons/gi";
 import me from "../public/playing.jpg";
-import spectro from "../public/spectro.png";
+import spectro from "../public/sax_spec.png";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
