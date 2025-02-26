@@ -17,42 +17,42 @@ export default function Home() {
         <link rel="icon" href="/saxophone.ico" />
       </Head>
       <main className="bg-gradient-to-b from-slate-950 to-purple-800">
-        <section className="h-screen flex">
-          <div className="flex flex-grow">
-            <div className="w-1/2 p-8 text-slate-300">
+        <section className="min-h-screen flex flex-col md:flex-row">
+          <div className="flex flex-grow flex-col md:flex-row">
+            <div className="w-full md:w-1/2 p-8 text-slate-300">
               <h1>
-                <span className="text-6xl font-bold">Christian Manohar</span>
-                <p className="text-3xl">Data Scientist and Musician</p>
+                <span className="text-4xl md:text-6xl font-bold">Christian Manohar</span>
+                <p className="text-2xl md:text-3xl">Data Scientist and Musician</p>
                 <Link legacyBehavior href="/resume.pdf">
                   <a className="inline-block mt-4 px-6 py-2 bg-purple-800 text-slate-300 font-semibold rounded-lg shadow-md hover:bg-purple-800 transform hover:scale-105 transition-transform duration-300">
                     View My Resume
                   </a>
                 </Link>
-                <GiSaxophone className="text-6xl inline-block mb-4" />
+                <GiSaxophone className="text-4xl md:text-6xl inline-block mb-4" />
               </h1>
               <h2>
-                <a href="https://www.linkedin.com/in/christian-manohar-b205472b7/" className="inline-block text-4xl text-blue-500 shadow-md hover:filter hover:brightness-75 transform transition-transform duration-300">
+                <a href="https://www.linkedin.com/in/christian-manohar-b205472b7/" className="inline-block text-3xl md:text-4xl text-blue-500 shadow-md hover:filter hover:brightness-75 transform transition-transform duration-300">
                   <BsLinkedin />
                 </a>
-                <a href="https://github.com/ChristianManohar" className="inline-block px-4 text-4xl text-gray-500 shadow-md hover:filter hover:brightness-75 transform transition-transform duration-300">
+                <a href="https://github.com/ChristianManohar" className="inline-block px-4 text-3xl md:text-4xl text-gray-500 shadow-md hover:filter hover:brightness-75 transform transition-transform duration-300">
                  <BsGithub />
                 </a>
-                <a href="mailto:chmano@umich.edu" className="inline-block text-4xl text-blue-400 shadow-md hover:filter hover:brightness-75 transform transition-transform duration-300">
+                <a href="mailto:chmano@umich.edu" className="inline-block text-3xl md:text-4xl text-blue-400 shadow-md hover:filter hover:brightness-75 transform transition-transform duration-300">
                   <MdEmail />
                 </a>
               </h2>
-              <div className="flex justify-between mt-8">
+              <div className="flex flex-col md:flex-row justify-between mt-8">
                 <p className="text-wrap text-large">
                   I am a third-year student pursuing a dual degree in Data Science and Jazz and Contemporary Improvisation at the University of Michigan. I am passionate about data analysis and transformation, particularly in the area of music and audio. In addition, I am an active saxophonist and composer, performing in various ensembles and leading rehearsals for the Blue Bop Jazz Orchestra, the premier student-led jazz orchestra at the University of Michigan.
                 </p>
                 <Image 
                     src={me}
                     alt=""
-                    className="h-96 w-96 rounded-lg shadow-2xl"
+                    className="h-64 w-64 md:h-96 md:w-96 rounded-lg shadow-2xl"
                 />
               </div>
               <div className="">
-                <h2 className="text-4xl text-slate-300 font-semibold">Skills</h2>
+                <h2 className="text-3xl md:text-4xl text-slate-300 font-semibold">Skills</h2>
                 <ul className="flex flex-wrap">
                   <li className="px-4 py-2 bg-slate-300 text-slate-800 rounded-lg shadow-md m-2">
                     Python
@@ -87,7 +87,7 @@ export default function Home() {
                 </ul>
               </div>
             </div>
-            <div className="w-1/2 relative">
+            <div className="w-full md:w-1/2 relative">
               <Image 
                 src={spectro} 
                 alt="" 
@@ -99,10 +99,10 @@ export default function Home() {
           </div>
         </section>
         <section className="flex flex-col justify-between">
-          <h2 className="text-6xl text-slate-300 font-bold p-8">Projects</h2>
+          <h2 className="text-4xl md:text-6xl text-slate-300 font-bold p-8">Projects</h2>
           <ul className="flex flex-wrap justify-around">
-          <li className="px-4">
-            <div className="relative flex flex-col my-6 bg-slate-300 shadow-sm border border-slate-700 rounded-lg w-96 transform hover:scale-105 transition-transform duration-300">
+            <li className="px-4 w-full md:w-auto">
+              <div className="relative flex flex-col my-6 bg-slate-300 shadow-sm border border-slate-700 rounded-lg w-full md:w-96 transform hover:scale-105 transition-transform duration-300">
                 <div className="p-4">
                   <h5 className="mb-2 text-slate-800 text-xl font-semibold">
                     Exercise Image Classifier (Current)
@@ -124,8 +124,8 @@ export default function Home() {
                 </div>
               </div>
             </li>
-            <li className="px-4">
-            <div className="relative flex flex-col my-6 bg-slate-300 shadow-sm border border-slate-700 rounded-lg w-96 transform hover:scale-105 transition-transform duration-300">
+            <li className="px-4 w-full md:w-auto">
+              <div className="relative flex flex-col my-6 bg-slate-300 shadow-sm border border-slate-700 rounded-lg w-full md:w-96 transform hover:scale-105 transition-transform duration-300">
                 <div className="p-4">
                   <h5 className="mb-2 text-slate-800 text-xl font-semibold">
                     Dog Image Classifier
@@ -147,8 +147,8 @@ export default function Home() {
                 </div>
               </div>
             </li>
-            <li>
-              <div className="relative flex flex-col my-6 bg-slate-300 shadow-sm border border-slate-200 rounded-lg w-96 transform hover:scale-105 transition-transform duration-300">
+            <li className="px-4 w-full md:w-auto">
+              <div className="relative flex flex-col my-6 bg-slate-300 shadow-sm border border-slate-200 rounded-lg w-full md:w-96 transform hover:scale-105 transition-transform duration-300">
                 <div className="p-4">
                   <h5 className="mb-2 text-slate-800 text-xl font-semibold">
                     Facebook Database Replicate
@@ -170,8 +170,8 @@ export default function Home() {
                 </div>
               </div>
             </li>
-            <li className="px-4">
-            <div className="relative flex flex-col my-6 bg-slate-300 shadow-sm border border-slate-700 rounded-lg w-96 transform hover:scale-105 transition-transform duration-300">
+            <li className="px-4 w-full md:w-auto">
+              <div className="relative flex flex-col my-6 bg-slate-300 shadow-sm border border-slate-700 rounded-lg w-full md:w-96 transform hover:scale-105 transition-transform duration-300">
                 <div className="p-4">
                   <h5 className="mb-2 text-slate-800 text-xl font-semibold">
                     Electric Vehicle Sales Analysis
