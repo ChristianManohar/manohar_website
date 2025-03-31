@@ -2,11 +2,16 @@ import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
 import { GiSaxophone } from "react-icons/gi";
-import me from "../public/playing.jpg";
+import me from "../public/sax_me.jpg";
 import spectro from "../public/sax_spec.png";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
+import { FaPython, FaJava } from "react-icons/fa";
+import { SiPytorch, SiR, SiCplusplus } from "react-icons/si";
+import { TbSql } from "react-icons/tb";
+import { MdOutlineDataUsage } from "react-icons/md";
+import { AiOutlineAudio } from "react-icons/ai";
 
 export default function Home() {
   return (
@@ -16,7 +21,7 @@ export default function Home() {
         <meta name="description" content="Christian Manohar's Personal Webiste" />
         <link rel="icon" href="/saxophone.ico" />
       </Head>
-      <main className="bg-gradient-to-b from-slate-950 to-purple-800">
+      <main className="min-h-screen bg-gradient-to-b from-slate-950 to-purple-800 overflow-auto">
         <section className="min-h-screen flex flex-col md:flex-row">
           <div className="flex flex-grow flex-col md:flex-row">
             <div className="w-full md:w-1/2 p-8 text-slate-300">
@@ -54,34 +59,43 @@ export default function Home() {
               <div className="">
                 <h2 className="text-3xl md:text-4xl text-slate-300 font-semibold">Skills</h2>
                 <ul className="flex flex-wrap">
-                  <li className="px-4 py-2 bg-slate-300 text-slate-800 rounded-lg shadow-md m-2">
+                  <li className="px-4 py-2 bg-slate-300 text-slate-800 rounded-lg shadow-md m-2 flex items-center">
+                    <FaPython className="mr-2" />
                     Python
                   </li>
-                  <li className="px-4 py-2 bg-slate-300 text-slate-800 rounded-lg shadow-md m-2">
+                  <li className="px-4 py-2 bg-slate-300 text-slate-800 rounded-lg shadow-md m-2 flex items-center">
+                    <SiPytorch className="mr-2" />
                     PyTorch
                   </li>
-                  <li className="px-4 py-2 bg-slate-300 text-slate-800 rounded-lg shadow-md m-2">
+                  <li className="px-4 py-2 bg-slate-300 text-slate-800 rounded-lg shadow-md m-2 flex items-center">
+                    <SiR className="mr-2" />
                     R
                   </li>
-                  <li className="px-4 py-2 bg-slate-300 text-slate-800 rounded-lg shadow-md m-2">
+                  <li className="px-4 py-2 bg-slate-300 text-slate-800 rounded-lg shadow-md m-2 flex items-center">
+                    <TbSql className="mr-2" />
                     SQL
                   </li>
-                  <li className="px-4 py-2 bg-slate-300 text-slate-800 rounded-lg shadow-md m-2">
+                  <li className="px-4 py-2 bg-slate-300 text-slate-800 rounded-lg shadow-md m-2 flex items-center">
+                    <SiCplusplus className="mr-2" />
                     C/C++
                   </li>
-                  <li className="px-4 py-2 bg-slate-300 text-slate-800 rounded-lg shadow-md m-2">
+                  <li className="px-4 py-2 bg-slate-300 text-slate-800 rounded-lg shadow-md m-2 flex items-center">
+                    <FaJava className="mr-2" />
                     Java
                   </li>
-                  <li className="px-4 py-2 bg-slate-300 text-slate-800 rounded-lg shadow-md m-2">
+                  <li className="px-4 py-2 bg-slate-300 text-slate-800 rounded-lg shadow-md m-2 flex items-center">
+                    <MdOutlineDataUsage className="mr-2" />
                     Data Visualization
                   </li>
-                  <li className="px-4 py-2 bg-slate-300 text-slate-800 rounded-lg shadow-md m-2">
+                  <li className="px-4 py-2 bg-slate-300 text-slate-800 rounded-lg shadow-md m-2 flex items-center">
+                    <MdOutlineDataUsage className="mr-2" />
                     Machine Learning
                   </li>
-                  <li className="px-4 py-2 bg-slate-300 text-slate-800 rounded-lg shadow-md m-2">
+                  <li className="px-4 py-2 bg-slate-300 text-slate-800 rounded-lg shadow-md m-2 flex items-center">
+                    <AiOutlineAudio className="mr-2" />
                     Audio Processing
                   </li>
-                  <li className="px-4 py-2 bg-slate-300 text-slate-800 rounded-lg shadow-md m-2">
+                  <li className="px-4 py-2 bg-slate-300 text-slate-800 rounded-lg shadow-md m-2 flex items-center">
                     Ableton Live
                   </li>
                 </ul>
@@ -194,7 +208,7 @@ export default function Home() {
         </section>
         <div>
           <p className="text-slate-300 text-right px-2">
-            Made by Christian Manohar
+            Made by Christian Manohar using react, next.js, and tailwindcss
           </p>
         </div>
       </main>
