@@ -4,6 +4,8 @@ import Link from "next/link";
 import { GiSaxophone } from "react-icons/gi";
 import me from "../public/sax_me.jpg";
 import spectro from "../public/sax_spec.png";
+import petals from "../public/petals_cropped.jpeg"
+import moon from "../public/moon_cropped.jpeg"
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
@@ -21,7 +23,7 @@ export default function Home() {
         <meta name="description" content="Christian Manohar's Personal Webiste" />
         <link rel="icon" href="/saxophone.ico" />
       </Head>
-      <main className="min-h-screen bg-gradient-to-b from-slate-950 to-purple-800 overflow-auto">
+      <main className="h-full min-h-screen bg-gradient-to-b from-slate-950 to-purple-800 overflow-auto overscroll-contain">
         <section className="min-h-screen flex flex-col md:flex-row">
           <div className="flex flex-grow flex-col md:flex-row">
             <div className="w-full md:w-1/2 p-8 text-slate-300">
@@ -105,9 +107,9 @@ export default function Home() {
               <Image 
                 src={spectro} 
                 alt="" 
-                layout="fill" 
                 objectFit="cover" 
                 className="absolute right-0 h-full rounded-lg shadow-2xl"
+                width={700}
               />
             </div>
           </div>
@@ -202,6 +204,61 @@ export default function Home() {
                     </li>
                   </ul>
                 </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section className="flex flex-col justify-between">
+          <h2 className="text-4xl md:text-6xl text-slate-300 font-bold p-8">Music/Compositions</h2>
+          <ul className="flex flex-wrap justify-around">
+            <li>
+              <div className="max-w-sm border border-gray-700 rounded-lg shadow-sm bg-slate-300 dark:border-gray-700 transform hover:scale-105 transition-transform duration-300">
+                  <a>
+                      <Image
+                          className="rounded-t-lg"
+                          src={petals}
+                          alt=""
+                          width={500}
+                          >
+                      </Image>
+                  </a>
+                  <div className="p-5">
+                      <a>
+                          <h5 className="mb-2 text-2xl font-bold tracking-tight text-slate-800 ">Petal Point</h5>
+                      </a>
+                      <p className="mb-3 font-normal text-slate-600 ">An original composition for small jazz ensemble. Influenced by Ryusenkei and other jazz/funk.</p>
+                      <a href="https://musescore.com/user/34652253/scores/24599419?share=copy_link" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                          View score
+                          <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                          </svg>
+                      </a>
+                  </div>
+              </div>
+            </li>
+            <li>
+              <div className="max-w-sm border border-gray-700 rounded-lg shadow-sm bg-slate-300 dark:border-gray-700 transform hover:scale-105 transition-transform duration-300">
+                  <a>
+                      <Image
+                          className="rounded-t-lg"
+                          src={moon}
+                          alt=""
+                          layout="responsive"
+                          >
+                      </Image>
+                  </a>
+                  <div className="p-5">
+                      <a>
+                          <h5 className="mb-2 text-2xl font-bold tracking-tight text-slate-800 ">Until the Moon Falls</h5>
+                      </a>
+                      <p className="mb-3 font-normal text-slate-600 ">An original composition for small jazz ensemble with an emphasis on fingerstyle guitar. WIP</p>
+                      <a href="https://musescore.com/user/34652253/scores/24599800?share=copy_link" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                          View score
+                          <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                          </svg>
+                      </a>
+                  </div>
               </div>
             </li>
           </ul>

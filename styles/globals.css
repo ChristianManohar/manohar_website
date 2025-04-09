@@ -4,4 +4,9 @@ html, body {
   padding: 0;
   background: linear-gradient(to bottom, #0f172a, #6b21a8); /* Matches the gradient in your page */
   background-attachment: fixed; /* Ensures the gradient stays fixed during scrolling */
+  overflow: hidden; /* Prevents scrolling beyond the content */
+}
+
+#root, #__next {
+  height: 100%; /* Ensures the Next.js root element spans the full height */
 }
